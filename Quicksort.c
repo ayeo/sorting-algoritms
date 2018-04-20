@@ -16,7 +16,7 @@ int partition(int* data, unsigned left, unsigned right) {
     return left;
 }
 
-void quicksort(int* data, int left, int right) {
+void quicksort(int* data, unsigned left, unsigned right) {
     if (left >= right) return;
     int k = partition(data, left, right);
     quicksort(data, left, k);
